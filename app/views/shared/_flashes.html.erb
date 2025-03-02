@@ -1,0 +1,7 @@
+<% flash.each do |key, message| %>
+  <div class="fixed bottom-4 right-4 z-50 bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded shadow-lg flex items-center">
+    <button onclick="this.parentElement.remove()" class="ml-4 text-blue-700 hover:text-blue-900 focus:outline-none">
+        <%= message %>
+    </button>
+  </div>
+<% end %>
